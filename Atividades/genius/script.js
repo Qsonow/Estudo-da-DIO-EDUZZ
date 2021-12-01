@@ -55,8 +55,8 @@ let click = (color) => {
     createColorElement(color).classList.add('selected');
 
     setTimeout(()=>{
-        createColorElement(color).classList.remove('selected')
-        checkOrder()
+        createColorElement(color).classList.remove('selected');
+        checkOrder();
     }, 250);
     
 }
@@ -94,16 +94,16 @@ let gameOver = () => {
 
 //iniciar o jogo
 let playGame = () => {
-    alert('Bem vindo ao Genesis! Iniciando novo jogo!')
+    alert('Bem vindo ao Genesis! Iniciando novo jogo!');
     score = 0;
 
     nextLevel();
 }
 
 //configurando clicks
-green.onclick = () => click(0)
-red.onclick = () => click(1)
-yellow.onclick = () => click(2)
-blue.onclick = () => click(3)
+green.onclick = () => click(0);
+red.onclick = () => click(1);
+yellow.onclick = () => click(2);
+blue.onclick = () => click(3);
 
 playGame()
